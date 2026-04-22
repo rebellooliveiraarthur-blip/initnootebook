@@ -1,0 +1,34 @@
+[
+    {
+        "role": "user",
+        "content": "Qual o faturamento do último trimestre?"
+    },
+    {
+        "role": "user",
+        "content": "Qual o faturamento do último trimestre?"
+    },
+    {
+        "role": "user",
+        "content": "Qual o faturamento do último trimestre?"
+    },
+    {
+        "role": "assistant",
+        "content": "You are a helpful AI assistant named Init. You can help me with any question or text you provide. Use the context to respond as per your request. \n\nCONTEXT: \n        \n        USER MESSAGE: Qual o faturamento do último trimestre?\n        "
+    },
+    {
+        "role": "user",
+        "content": "Qual o faturamento do último trimestre?"
+    },
+    {
+        "role": "assistant",
+        "content": "The user is asking about the faturamento of the last trimestre (the 2019-2020). The context provides information that suggests this might be a very recent or new year's event, but it does not specify what kind of event it is."
+    },
+    {
+        "role": "user",
+        "content": "Qual o faturamento do último trimestre?"
+    },
+    {
+        "role": "assistant",
+        "content": "The user is asking about the faturamento of the last trimestre (the 2019-2020). The context provides information that suggests this might be a very recent or new year's event, but it does not specify what kind of event it is."
+    }
+]
