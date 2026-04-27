@@ -1,5 +1,5 @@
-from engines.vector_engine import VectorEngine
-from engines.llm_engine import LLMEngine
+from modules.vector_engine import VectorEngine
+from modules.llm_module import LLMEngine
 
 class RAG:
     def __init__(self):

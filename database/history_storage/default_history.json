@@ -30,5 +30,21 @@
     {
         "role": "assistant",
         "content": "The user is asking about the faturamento of the last trimestre (the 2019-2020). The context provides information that suggests this might be a very recent or new year's event, but it does not specify what kind of event it is."
+    },
+    {
+        "role": "user",
+        "content": "Qual o faturamento do último trimestre?"
+    },
+    {
+        "role": "assistant",
+        "content": "The user is asking about the faturamento of the last trimestre (the 2019-2020). The context provides information that suggests this might be a very recent or new year's event, but it does not specify what kind of event it is."
+    },
+    {
+        "role": "user",
+        "content": "a"
+    },
+    {
+        "role": "user",
+        "content": "hello"
     }
 ]

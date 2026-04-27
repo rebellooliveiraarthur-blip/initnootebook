@@ -59,8 +59,28 @@ class DatabaseManager:
     # --- LÓGICA DO CONHECIMENTO (CHROMA) ---
 
     def save_knowledge(self, text, metadata=None):
-        """Adiciona texto à base de conhecimento da seção."""
-        self.vector_db.add_texts(texts=[text], metadatas=[metadata or {}])
+        """Add text to knowledge base with chunking for large documents"""
+        if not text or not text.strip():
+            return
+        
+        # Split into chunks to avoid massive embeddings
+        chunks = self._chunk_text(text, chunk_size=1000, overlap=100)
+        
+        # Add all chunks
+        metadatas = [metadata or {} for _ in chunks]
+        self.vector_db.add_texts(texts=chunks, metadatas=metadatas)
+
+    def _chunk_text(self, text, chunk_size=1000, overlap=100):
+        """Split text into overlapping chunks"""
+        chunks = []
+        start = 0
+        
+        while start < len(text):
+            end = min(start + chunk_size, len(text))
+            chunks.append(text[start:end])
+            start = end - overlap
+            
+        return chunks
 
     def vector_search(self, query, top_k=3):
         """Busca apenas dentro dos documentos desta seção."""
